@@ -1,0 +1,91 @@
+==================================================
+STUDENT GRADE CALCULATOR - TEST CASES DOCUMENT
+==================================================
+
+Grading Logic Reference:
+- A: 90 - 100
+- B: 80 - 89
+- C: 70 - 79
+- D: 60 - 69
+- F: 0 - 59
+
+--------------------------------------------------
+TEST CASE 1: Valid Input - Grade A (Upper Boundary)
+--------------------------------------------------
+- Input Name: Rahul Sharma
+- Input Marks: 100
+- Expected Output: 
+  * Grade: A+ (or A based on logic)
+  * Message: Encouraging success message displayed.
+
+--------------------------------------------------
+TEST CASE 2: Valid Input - Grade A (Standard Range)
+--------------------------------------------------
+- Input Name: Priya Singh
+- Input Marks: 92
+- Expected Output: 
+  * Grade: A
+  * Message: Outstanding performance message displayed.
+
+--------------------------------------------------
+TEST CASE 3: Valid Input - Grade B (Standard Range)[cite: 4]
+--------------------------------------------------
+- Input Name: Amit Kumar
+- Input Marks: 85
+- Expected Output: 
+  * Grade: B
+  * Message: Great job message displayed.
+
+--------------------------------------------------
+TEST CASE 4: Valid Input - Grade C (Standard Range)[cite: 4]
+--------------------------------------------------
+- Input Name: Neha Gupta
+- Input Marks: 74
+- Expected Output: 
+  * Grade: C
+  * Message: Good effort message displayed.
+
+--------------------------------------------------
+TEST CASE 5: Valid Input - Grade D (Standard Range)[cite: 4]
+--------------------------------------------------
+- Input Name: Rohit Verma
+- Input Marks: 62
+- Expected Output: 
+  * Grade: D
+  * Message: Fair performance message displayed.
+
+--------------------------------------------------
+TEST CASE 6: Valid Input - Grade F (Lower Boundary & Fail)[cite: 4]
+--------------------------------------------------
+- Input Name: Pooja Das
+- Input Marks: 40
+- Expected Output: 
+  * Grade: F
+  * Message: Encouraging retry message displayed.
+
+--------------------------------------------------
+TEST CASE 7: Invalid Input - Negative Number (Validation Check)
+--------------------------------------------------
+- Input Name: Test User
+- Input Marks: -10
+- Expected Output: 
+  * Error message shown: " Invalid marks! Please enter a value between 0 and 100."
+  * Program prompts the user to re-enter valid marks using the while loop.
+
+--------------------------------------------------
+TEST CASE 8: Invalid Input - Above 100 (Validation Check)
+--------------------------------------------------
+- Input Name: Test User
+- Input Marks: 105
+- Expected Output: 
+  * Error message shown: " Invalid marks! Please enter a value between 0 and 100."
+  * Program prompts the user to re-enter valid marks using the while loop.
+
+--------------------------------------------------
+TEST CASE 9: Invalid Input - String / Text (Exception Handling Check)
+--------------------------------------------------
+- Input Name: Test User
+- Input Marks: "abc"
+- Expected Output: 
+  * Error message shown: " Invalid input! Please enter a valid number."
+  * Program catches ValueError and re-prompts for input.
